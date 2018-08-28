@@ -100,3 +100,23 @@ article > li {
     flex-direction: column;
     justify-content: center;
 }
+
+@media screen and (max-width: 1000px) {
+    #grid-container {
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+    }
+    #navbar {
+        width: 100vw;
+        height: 30%;
+        position: fixed;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        border-bottom: 3px solid gray;
+    }
+    #main-doc {
+        width: 100vw;
+        margin-top: 70%;
+    }
+}
