@@ -9,21 +9,67 @@
 
 <body>
     <div id="grid-container">
-       <nav id="navbar">
+        <nav id="navbar">
             <div id="nav-header">
                 <h1>CSS Grid</h1>
             </div>
-            <a href="" class="nav-item">Create Your First CSS Grid</a>
-            <a href="" class="nav-item">Create Your First CSS Grid</a>
+            <a href="#Introduction" class="nav-item">Introduction</a>
+            <a href="#Create_Your_First_CSS_Grid" class="nav-item">Create Your First CSS Grid</a>
+            <a href="Add_Columns_with_grid-template-columns" class="nav-item">Add Columns with grid-template-columns</a>
+            <a href="" class="nav-item"></a>
         </nav>
         <main id="main-doc">
+            <section class="main-section">
+                <header id="Introduction">
+                    Introduction to the CSS Grid
+                </header>
+                <article>
+                    <p>CSS Grid helps you easily build complex web designs. It works by turning an HTML element into a grid container with rows and columns for you to place children elements where you want within the grid.</p>
+                    <h3>Why CSS Grid is better than Bootstrap for creating layouts?</h3>
+
+                    <li>Your markup will be simpler: Swapping out Bootstrap with CSS Grid will make your HTML cleaner. While this isn’t the most important benefit, it’s likely the first one you’ll notice.
+                    </li>
+                    <li>Much more flexibility: Let’s say you want to change your layout according to the screen size. For example pull the menu up to the top row when it’s being viewed on mobile.</li>
+                    <li>No more 12 column limitation: This isn’t as huge problem, but it has annoyed several times. As the Bootstrap grid is split into twelve columns, you’ll go into trouble if you want a five column layout. Or seven. Or nine. Or anything that doesn’t add up to twelve.</li>
+                    <li>
+                        Browser support: Before we end we of course have to talk about browser support as well. At the time of writing this article, 75% of global website traffic supports CSS Grid.
+                    </li>
+                    <li>Complexity of layout: CSS Grid unlike with Bootstrap, CSS Grid markup won’t grow much in complexity as the layout grows in complexity.</li>
+                </article>
+            </section>
+
+            <section class="main-section">
+                <header id="Create_Your_First_CSS_Grid">
+                    CSS Grid: Create Your First CSS Grid
+                </header>
+                <article>
+                    <p>Turn any HTML element into a grid container by setting its <code>display</code> property to <code>grid</code>. This gives you the ability to use all the other properties associated with CSS Grid.</p>
+                    <h3>Note</h3>
+                    <p>In CSS Grid, the parent element is referred to as the <em>container</em> and its children are called <em>items</em>.</p>
+                    <h3>Example:</h3>
+                    <code class="code-section">display: grid;</code>
+                </article>
+            </section>
+            <section class="main-section">
+                <header id="Add_Columns_with_grid-template-columns">
+                    CSS Grid: Add Columns with grid-template-columns
+                </header>
+                <article>
+                    <p>Simply creating a grid element doesn't get you very far. You need to define the structure of the grid as well. To add some columns to the grid, use the <code>grid-template-columns</code> property on a grid container as demonstrated below:</p>
+                    <code class="code-section">
+.container {
+  display: grid;
+  grid-template-columns: 50px 50px;
+}
+                    </code>
+                    <p>This will give your grid two columns that are 50px wide each.</p>
+                    <p>The number of parameters given to the <code>grid-template-columns</code> property indicates the number of columns in the grid, and the value of each parameter indicates the width of each column.</p>
+                </article>
+            </section>
             <section class="main-section"></section>
-            <section class="main-section"></section>            
             <section class="main-section"></section>
             <section class="main-section"></section>
-            <section class="main-section"></section>
-            
-        </main>        
+        </main>
     </div>
 </body>
 
